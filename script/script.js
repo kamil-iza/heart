@@ -11,5 +11,4 @@ const revealSection = () => {
 
 window.addEventListener("scroll", revealSection);
 
-// Initial reveal
 revealSection();

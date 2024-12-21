@@ -1,78 +1,74 @@
-/* @font-face {
-    font-family: vogueFonts;
-    src: url(../fonts/Vogue.ttf);
-}
-
-@font-face {
-    font-family: amalfiFonts;
-    src: url(../fonts/Amalfi\ Coast.ttf);
-}
-
-@font-face {
-    font-family: montserratFonts;
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
-} */
-
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
-    color: #333;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+  color: #333;
 }
 
 section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    opacity: 0;
-    transform: translateY(50px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 section.active {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .intro {
-    background: url('../assets/IMG_0307.HEIC') center/cover no-repeat;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  background: url("../assets/calus.png") center/cover no-repeat;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .intro h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .intro p {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
+  max-height: 70%;
+  width: auto;
+  max-width: 100vw;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
 .text-container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro p {
+    font-size: 1em;
+  }
 }
